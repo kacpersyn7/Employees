@@ -10,3 +10,7 @@ Permanent::Permanent(const std::string & name, const std::string & surname,
 {
     m_salary = salary;
 }
+double Permanent::calcSalary()
+{
+    return m_salary;
+}

@@ -14,7 +14,8 @@ public:
     Permanent(const std::string & name = "przykład", const std::string & surname = "przykład",
              const std::string & pesel = "00000000000", const std::string & nip = "0000000000",
              double salary = 0.0);
-
+    ~Permanent();
+    virtual double calcSalary();
 };
 
 

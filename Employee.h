@@ -16,7 +16,7 @@ public:
              const std::string & pesel = "00000000000", const std::string & nip = "0000000000" );
     virtual ~Employee(){};
     virtual void print() const;
-    virtual void calcSalary() = 0;
+    virtual double calcSalary() = 0;
 };
 
 

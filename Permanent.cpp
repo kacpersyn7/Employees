@@ -3,7 +3,7 @@
 //
 
 #include "Permanent.h"
-
+Permanent::Permanent() {Employee();}
 Permanent::Permanent(const std::string & name, const std::string & surname,
                      const std::string & pesel, const std::string & nip, double salary)
         : Employee(name, surname, pesel, nip)
@@ -14,3 +14,5 @@ double Permanent::calcSalary()
 {
     return m_salary;
 }
+
+

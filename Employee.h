@@ -7,13 +7,14 @@
 #include <iostream>
 class Employee {
 private:
-    std::string m_name;
-    std::string m_surname;
-    std::string m_pesel;
-    std::string m_nip;
+    std::string m_name = "przykład";
+    std::string m_surname = "przykład";
+    std::string m_pesel = "00000000000";
+    std::string m_nip = "0000000000";
 public:
-    Employee(const std::string & name = "przykład", const std::string & surname = "przykład",
-             const std::string & pesel = "00000000000", const std::string & nip = "0000000000" );
+    Employee();
+    Employee(const std::string & name, const std::string & surname,
+             const std::string & pesel, const std::string & nip);
     virtual ~Employee(){};
     virtual void print() const;
     virtual double calcSalary() = 0;

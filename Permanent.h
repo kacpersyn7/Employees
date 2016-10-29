@@ -9,11 +9,12 @@
 
 class Permanent : public Employee {
 private:
-    double m_salary;
+    double m_salary = 0.0;
 public:
-    Permanent(const std::string & name = "przykład", const std::string & surname = "przykład",
-             const std::string & pesel = "00000000000", const std::string & nip = "0000000000",
-             double salary = 0.0);
+    Permanent();
+    Permanent(const std::string & name, const std::string & surname,
+             const std::string & pesel, const std::string & nip,
+             double salary);
     ~Permanent();
     virtual double calcSalary();
 };

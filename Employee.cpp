@@ -3,6 +3,7 @@
 //
 
 #include "Employee.h"
+Employee::Employee(){}
 Employee::Employee(const std::string & name, const std::string & surname,
                    const std::string & pesel,
                    const std::string & nip): m_name(name), m_surname(surname), m_pesel(pesel), m_nip(nip) {}

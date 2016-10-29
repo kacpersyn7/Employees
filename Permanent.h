@@ -15,8 +15,9 @@ public:
     Permanent(const std::string & name, const std::string & surname,
              const std::string & pesel, const std::string & nip,
              double salary);
-    ~Permanent();
-    virtual double calcSalary();
+    ~Permanent(){};
+    virtual double calcSalary() const;
+    virtual void print() const;
 };
 
 

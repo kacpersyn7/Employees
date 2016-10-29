@@ -3,7 +3,7 @@
 //
 
 #include "Trader.h"
-Trader::Trader() {Employee();}
+Trader::Trader() : Employee() {}
 Trader::Trader(const std::string & name, const std::string & surname,
                            const std::string & pesel, const std::string & nip, double sales, double percent)
         : Employee(name, surname, pesel, nip)
@@ -21,7 +21,7 @@ Trader::Trader(const std::string & name, const std::string & surname,
 }
 
 double Trader::calcSalary() const{
-    return m_sales * m_percent;
+    return m_sales * m_percent * 0.01;
 }
 
 void Trader::print() const

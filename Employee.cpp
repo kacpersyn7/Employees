@@ -12,5 +12,5 @@ void Employee::print() const
     std::cout << "Imię: " << m_name << "\n"
          << "Nazwisko: " << m_surname << "\n"
          << "Pesel: " << m_pesel << "\n"
-         << "Nip" << m_nip << "\n";
+         << "Nip: " << m_nip << "\n";
 }

@@ -4,7 +4,7 @@
 
 #include "HalfEmployee.h"
 
-HalfEmployee::HalfEmployee() {Employee();}
+HalfEmployee::HalfEmployee() : Employee() {}
 HalfEmployee::HalfEmployee(const std::string & name, const std::string & surname,
                      const std::string & pesel, const std::string & nip, double salary_per_hour, int hours)
         : Employee(name, surname, pesel, nip)

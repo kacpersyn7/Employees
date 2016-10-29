@@ -16,8 +16,9 @@ public:
     Employee(const std::string & name, const std::string & surname,
              const std::string & pesel, const std::string & nip);
     virtual ~Employee(){};
+
     virtual void print() const;
-    virtual double calcSalary() = 0;
+    virtual double calcSalary() const  = 0 ;
 };
 
 

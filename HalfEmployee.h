@@ -12,11 +12,11 @@ private:
     double m_salary_per_hour = 0.0;
     int m_hours = 0;
 public:
-    HalfEmployee()
+    HalfEmployee();
     HalfEmployee(const std::string & name, const std::string & surname,
               const std::string & pesel, const std::string & nip,
               double salary_per_hour, int hours);
-    ~HalfEmployee();
+    ~HalfEmployee(){};
     virtual double calcSalary() const;
     virtual void print() const;
 };

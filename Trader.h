@@ -15,7 +15,7 @@ public:
     Trader(const std::string & name, const std::string & surname,
                  const std::string & pesel, const std::string & nip,
                  double sales, double percent);
-    ~Trader();
+    ~Trader(){};
     virtual double calcSalary() const;
     virtual void print() const;
 
